@@ -7,11 +7,11 @@ part 'weather_response.g.dart';
 
 abstract class WeatherResponse
     implements Built<WeatherResponse, WeatherResponseBuilder> {
-  String get cod;
-  int get message;
-  int get cnt;
-  BuiltList<WeatherList> get list;
-  City get city;
+  String? get cod;
+  int? get message;
+  int? get cnt;
+  BuiltList<WeatherList>? get list;
+  City? get city;
 
   WeatherResponse._();
 
@@ -29,15 +29,15 @@ abstract class WeatherResponse
 }
 
 abstract class WeatherList implements Built<WeatherList, WeatherListBuilder> {
-  int get dt;
-  Main get main;
-  BuiltList<Weather> get weather;
-  Clouds get clouds;
-  Wind get wind;
-  int get visibility;
-  double get pop;
-  Sys get sys;
-  String get dt_txt;
+  int? get dt;
+  Main? get main;
+  BuiltList<Weather>? get weather;
+  Clouds? get clouds;
+  Wind? get wind;
+  int? get visibility;
+  double? get pop;
+  Sys? get sys;
+  String? get dt_txt;
 
   WeatherList._();
 
@@ -47,15 +47,15 @@ abstract class WeatherList implements Built<WeatherList, WeatherListBuilder> {
 }
 
 abstract class Main implements Built<Main, MainBuilder> {
-  double get temp;
-  double get feels_like;
-  double get temp_min;
-  double get temp_max;
-  int get pressure;
-  int get sea_level;
-  int get grnd_level;
-  int get humidity;
-  double get temp_kf;
+  double? get temp;
+  double? get feels_like;
+  double? get temp_min;
+  double? get temp_max;
+  int? get pressure;
+  int? get sea_level;
+  int? get grnd_level;
+  int? get humidity;
+  double? get temp_kf;
 
   Main._();
 
@@ -65,10 +65,10 @@ abstract class Main implements Built<Main, MainBuilder> {
 }
 
 abstract class Weather implements Built<Weather, WeatherBuilder> {
-  int get id;
-  String get main;
-  String get description;
-  String get icon;
+  int? get id;
+  String? get main;
+  String? get description;
+  String? get icon;
 
   Weather._();
 
@@ -78,7 +78,7 @@ abstract class Weather implements Built<Weather, WeatherBuilder> {
 }
 
 abstract class Clouds implements Built<Clouds, CloudsBuilder> {
-  int get all;
+  int? get all;
 
   Clouds._();
 
@@ -88,9 +88,9 @@ abstract class Clouds implements Built<Clouds, CloudsBuilder> {
 }
 
 abstract class Wind implements Built<Wind, WindBuilder> {
-  double get speed;
-  int get deg;
-  double get gust;
+  double? get speed;
+  int? get deg;
+  double? get gust;
 
   Wind._();
 
@@ -100,7 +100,7 @@ abstract class Wind implements Built<Wind, WindBuilder> {
 }
 
 abstract class Sys implements Built<Sys, SysBuilder> {
-  String get pod;
+  String? get pod;
 
   Sys._();
 
@@ -110,14 +110,14 @@ abstract class Sys implements Built<Sys, SysBuilder> {
 }
 
 abstract class City implements Built<City, CityBuilder> {
-  int get id;
-  String get name;
-  Coord get coord;
-  String get country;
-  int get population;
-  int get timezone;
-  int get sunrise;
-  int get sunset;
+  int? get id;
+  String? get name;
+  Coord? get coord;
+  String? get country;
+  int? get population;
+  int? get timezone;
+  int? get sunrise;
+  int? get sunset;
 
   City._();
 
@@ -127,8 +127,8 @@ abstract class City implements Built<City, CityBuilder> {
 }
 
 abstract class Coord implements Built<Coord, CoordBuilder> {
-  double get lat;
-  double get lon;
+  double? get lat;
+  double? get lon;
 
   Coord._();
 
