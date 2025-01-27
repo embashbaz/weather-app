@@ -9,7 +9,7 @@ abstract class MainRepository {
   //
   // WeatherDataResponse getApiData({int? cityId, int? cityName});
 
-  Future<void> getData(Function onResult, {int? cityId, int? cityName});
+  Future<void> getData(Function onResult, {int? cityId, String? cityName});
 
 
 }

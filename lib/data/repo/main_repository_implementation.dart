@@ -20,7 +20,7 @@ final DatabaseService _dbService;
 MainRepositoryImplementation(this._dioApiService, this._dbService);
 
 
-  WeatherDataResponse? getApiData( {int? cityId, int? cityName}) async {
+  WeatherDataResponse? getApiData( {int? cityId, String? cityName}) async {
     var apiData = await _dioApiService.getAllWeatherData(cityId: cityId, cityName: cityName);
     WeatherDataResponse? data;
 
@@ -65,11 +65,8 @@ MainRepositoryImplementation(this._dioApiService, this._dbService);
   }
 
   @override
-  Future<void> getData(Function onResult, {int? cityId, int? cityName}) async {
+  Future<void> getData(Function onResult, {int? cityId, String? cityName}) async {
 
-   // await Future.wait([
-
-    //]);
     var dbRecord = await getDbWeatherData(cityId: cityId);
     onResult(dbRecord);
     var apiRecord = await getApiData(cityId: cityId, cityName: cityName);
