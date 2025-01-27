@@ -27,7 +27,7 @@ class DatabaseService {
 
   Future<List<WeatherEntity>> getLastUpdatedWeatherData() async {
     var dbResponse = await database.query("weatherDataEntity",
-        orderBy: "timeAdded", limit: 1);
+        orderBy: "timeAdded DESC", limit: 1);
     return dbResponse.map((e) => WeatherEntity.fromJson(e)).toList();
   }
 

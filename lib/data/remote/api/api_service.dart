@@ -40,7 +40,7 @@ class DioHttpService {
   }
 
 
-  NetworkResponse getAllProducts({int? cityId, int? cityName}) {
+  NetworkResponse getAllWeatherData({int? cityId, int? cityName}) {
     return apiCall(() async {
       return _dio.get("", queryParameters: {
         if(cityId != null) "id": cityId,
