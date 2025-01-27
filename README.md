@@ -2,15 +2,14 @@
 
 Waether app for Craft Silicon Limited
 
-## Getting Started
+## Running the code
 
-This project is a starting point for a Flutter application.
+add a file inside https://github.com/embashbaz/weather-app/tree/master/lib/data/remote/api and name it weather_res.dart
+Add the following to the file
 
-A few resources to get you started if this is your first Flutter project:
+String BASE_URL = "https://api.openweathermap.org/data/2.5/forecast";
+String API_KEY = <MASK>;
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+With maks being the Open weather map api key. 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Please note that provided was not working so I created a new one.
