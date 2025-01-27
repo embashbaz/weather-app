@@ -45,7 +45,9 @@ class DioHttpService {
       return _dio.get("", queryParameters: {
         if(cityId != null) "id": cityId,
         if(cityName != null) "q": cityName,
-        "appid": API_KEY
+        "appid": API_KEY,
+        "units": "metric"
+
       });
     });
   }

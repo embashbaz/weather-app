@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 
 extension IntTimeExtension on int {
   DateTime getDateTimeFromInt() {
-    return DateTime.fromMillisecondsSinceEpoch(this, isUtc: true);
+    return DateTime.fromMillisecondsSinceEpoch((this * 1000), isUtc: true);
   }
 
   /// This function return you a time on 1/1/1970, with the time in miliseconds passed

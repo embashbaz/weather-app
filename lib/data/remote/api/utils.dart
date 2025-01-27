@@ -68,7 +68,7 @@ String? getMessageToDisplayForErrorCode(
   } else if (code >= 500 && code <= 599) {
     return "An error occurred on our end, please try again later. If the issue persists, get in touch with us.";
   } else if (code == 401) {
-    return "401";
+    return "You do not have the necessary permission to perform this action";
   } else if (code == 403) {
     return "You do not have the necessary permission to perform this action";
   } else if (code == 400) {

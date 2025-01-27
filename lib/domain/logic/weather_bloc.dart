@@ -17,7 +17,7 @@ class WeatherBloc extends Bloc<AppEvent, AppState> {
     });
 
     on<WeatherAppEvent>((event, emit) async {
-      _repository.getData((Either<WeatherAppError, WeatherResponse>? res) {
+      await _repository.getData((Either<WeatherAppError, WeatherResponse>? res) {
         emit(LoadingState());
         res?.fold((l) {
           emit(ErrorState(
