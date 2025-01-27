@@ -8,8 +8,8 @@ add a file inside https://github.com/embashbaz/weather-app/tree/master/lib/data/
 Add the following to the file
 
 String BASE_URL = "https://api.openweathermap.org/data/2.5/forecast";
-String API_KEY = <MASK>;
+String API_KEY = PROVIDE_KEY;
 
-With maks being the Open weather map api key. 
+With the Open weather map api key. 
 
 Please note that provided was not working so I created a new one.
